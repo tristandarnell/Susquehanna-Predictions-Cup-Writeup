@@ -1,0 +1,289 @@
+{
+  "identity": "bright-finch-0400",
+  "initial_balance": 100000.0,
+  "definitions": {
+    "pnl": "venue marked account value minus initial100000; not realized-only P&L",
+    "account_value": "100000+pnl",
+    "filled_order_count": "venue tradesCount; orders with >=1 fill, not individual executions",
+    "rank": "observed live/frozen leaderboard rank; final settlement rank unverified",
+    "volume": "venue cumulative traded volume as reported; not independently execution-reconciled"
+  },
+  "coverage": {
+    "snapshots": 24064,
+    "own_snapshots": 24064,
+    "missing_own_snapshots": 0,
+    "first_utc": "2026-10-02T03:26:57.081703+00:00",
+    "last_utc": "2026-11-04T20:37:44.722609+00:00",
+    "first_local": "2026-10-01T23:26:57.081703-04:00",
+    "last_local": "2026-11-04T15:37:44.722609-05:00",
+    "known_missing_opening_hours": 11.449189361929893,
+    "participant_count": "not established from top-N snapshots",
+    "gaps_over_10min": [
+      {
+        "start": "2026-10-02T04:55:10.862534+00:00",
+        "end": "2026-10-02T05:08:21.961248+00:00",
+        "seconds": 791.0987138748169
+      },
+      {
+        "start": "2026-10-02T07:23:05.772075+00:00",
+        "end": "2026-10-02T07:39:03.380760+00:00",
+        "seconds": 957.6086850166321
+      },
+      {
+        "start": "2026-10-15T03:26:40.297774+00:00",
+        "end": "2026-10-15T03:44:06.859551+00:00",
+        "seconds": 1046.5617768764496
+      },
+      {
+        "start": "2026-10-23T15:55:38.972103+00:00",
+        "end": "2026-10-23T16:06:39.594057+00:00",
+        "seconds": 660.6219539642334
+      }
+    ],
+    "source_sha256": "e55d1cc3aa2864b43008007db52fb8d0f56942cc3f2fb4f54fdeaa769ffbc301"
+  },
+  "first_observed": {
+    "t": 1790911617.081703,
+    "utc": "2026-10-02T03:26:57.081703+00:00",
+    "local": "2026-10-01T23:26:57.081703-04:00",
+    "pnl": 472790.47,
+    "account_value": 572790.47,
+    "rank": 4,
+    "volume": 3074841.185,
+    "filled_order_count": 5974
+  },
+  "peak_observed": {
+    "t": 1793391512.536517,
+    "utc": "2026-10-30T20:18:32.536517+00:00",
+    "local": "2026-10-30T16:18:32.536517-04:00",
+    "pnl": 954548.74,
+    "account_value": 1054548.74,
+    "rank": 3,
+    "volume": 25167907.335,
+    "filled_order_count": 17526
+  },
+  "best_observed_rank": 2,
+  "best_rank_first": {
+    "t": 1790917701.961248,
+    "utc": "2026-10-02T05:08:21.961248+00:00",
+    "local": "2026-10-02T01:08:21.961248-04:00",
+    "pnl": 510618.45,
+    "account_value": 610618.45,
+    "rank": 2,
+    "volume": 3384781.74,
+    "filled_order_count": 6061
+  },
+  "best_rank_last": {
+    "t": 1793448877.264915,
+    "utc": "2026-10-31T12:14:37.264915+00:00",
+    "local": "2026-10-31T08:14:37.264915-04:00",
+    "pnl": 932032.56,
+    "account_value": 1032032.56,
+    "rank": 2,
+    "volume": 25366319.485,
+    "filled_order_count": 17635
+  },
+  "max_observed_marked_drawdown": {
+    "amount": 337464.06999999995,
+    "fraction": 0.32000803490600155,
+    "peak": {
+      "t": 1793391512.536517,
+      "utc": "2026-10-30T20:18:32.536517+00:00",
+      "local": "2026-10-30T16:18:32.536517-04:00",
+      "pnl": 954548.74,
+      "account_value": 1054548.74,
+      "rank": 3,
+      "volume": 25167907.335,
+      "filled_order_count": 17526
+    },
+    "trough": {
+      "t": 1793809482.195725,
+      "utc": "2026-11-04T16:24:42.195725+00:00",
+      "local": "2026-11-04T11:24:42.195725-05:00",
+      "pnl": 617084.67,
+      "account_value": 717084.67,
+      "rank": 6,
+      "volume": 27044840.85,
+      "filled_order_count": 18027
+    }
+  },
+  "last_prelock": {
+    "t": 1793811530.558469,
+    "utc": "2026-11-04T16:58:50.558469+00:00",
+    "local": "2026-11-04T11:58:50.558469-05:00",
+    "pnl": 648765.27,
+    "account_value": 748765.27,
+    "rank": 6,
+    "volume": 27044840.85,
+    "filled_order_count": 18027
+  },
+  "first_postlock": {
+    "t": 1793811651.192609,
+    "utc": "2026-11-04T17:00:51.192609+00:00",
+    "local": "2026-11-04T12:00:51.192609-05:00",
+    "pnl": 662109.67,
+    "account_value": 762109.67,
+    "rank": 6,
+    "volume": 27044840.85,
+    "filled_order_count": 18027
+  },
+  "latest": {
+    "t": 1793824664.722609,
+    "utc": "2026-11-04T20:37:44.722609+00:00",
+    "local": "2026-11-04T15:37:44.722609-05:00",
+    "pnl": 662109.67,
+    "account_value": 762109.67,
+    "rank": 6,
+    "volume": 27044840.85,
+    "filled_order_count": 18027
+  },
+  "latest_marked_return_on_initial_balance": 6.621096700000001,
+  "as_of": "2026-11-04; pre-settlement",
+  "execution_stop": {
+    "last_execution_utc": "2026-11-04T05:47:22.3731626+00:00",
+    "last_quantity_or_entry_position_change": {
+      "t": "2026-11-04T05:51:40.702Z",
+      "cash": 0.0,
+      "n": 36
+    },
+    "last_venue_filled_order_count_change": {
+      "t": 1793771269.716314,
+      "utc": "2026-11-04T05:47:49.716314+00:00",
+      "local": "2026-11-04T00:47:49.716314-05:00",
+      "pnl": 946386.23,
+      "account_value": 1046386.23,
+      "rank": 4,
+      "volume": 27044840.85,
+      "filled_order_count": 18027
+    },
+    "subsequent_marked_change": -284276.55999999994,
+    "interpretation": "No further recorded executions or changes in held quantities/entry averages after ~00:51EST. Subsequent leaderboard decline reflects repricing of held inventory, not additional executions in that period."
+  },
+  "remaining_holding_groups": {
+    "CO03_D_yes_R_no": {
+      "holdings": [
+        {
+          "exchange": "895",
+          "signed_yes_quantity": -123180.0,
+          "side": "NO",
+          "quantity": 123180.0,
+          "yes_entry": 0.2929,
+          "fair": 0.9268,
+          "sources": 2,
+          "estimated_remaining_cost_from_rounded_entry": 87100.57800000001,
+          "marked_held_value_if_priced": 9016.776000000005,
+          "remaining_holding_unrealized_vs_fair_if_priced": -78083.802,
+          "title": "Will the Republican Party win the CO-03 House race?"
+        },
+        {
+          "exchange": "894",
+          "signed_yes_quantity": 89654.0,
+          "side": "YES",
+          "quantity": 89654.0,
+          "yes_entry": 0.7076,
+          "fair": 0.0715,
+          "sources": 2,
+          "estimated_remaining_cost_from_rounded_entry": 63439.1704,
+          "marked_held_value_if_priced": 6410.2609999999995,
+          "remaining_holding_unrealized_vs_fair_if_priced": -57028.909400000004,
+          "title": "Will the Democratic Party win the CO-03 House race?"
+        }
+      ],
+      "remaining_cost_from_rounded_entries": 150539.7484,
+      "fair_marked_value": 15427.037000000004,
+      "unrealized_holding_pnl_vs_fair": -135112.7114,
+      "warning": "Snapshot mark-to-cost of remaining holdings only; not total strategy P&L, not day-change attribution, not settlement. Entries rounded4dp; source fair is contemporaneous snapshot."
+    },
+    "MS_senate_R_yes_D_no": {
+      "holdings": [
+        {
+          "exchange": "961",
+          "signed_yes_quantity": -108520.0,
+          "side": "NO",
+          "quantity": 108520.0,
+          "yes_entry": 0.2379,
+          "fair": 0.9208,
+          "sources": 2,
+          "estimated_remaining_cost_from_rounded_entry": 82703.092,
+          "marked_held_value_if_priced": 8594.784000000005,
+          "remaining_holding_unrealized_vs_fair_if_priced": -74108.308,
+          "title": "Will the Democratic Party win the Mississippi Senate?"
+        },
+        {
+          "exchange": "962",
+          "signed_yes_quantity": 84233.0,
+          "side": "YES",
+          "quantity": 84233.0,
+          "yes_entry": 0.7279,
+          "fair": 0.0808,
+          "sources": 2,
+          "estimated_remaining_cost_from_rounded_entry": 61313.2007,
+          "marked_held_value_if_priced": 6806.0264,
+          "remaining_holding_unrealized_vs_fair_if_priced": -54507.1743,
+          "title": "Will the Republican Party win the Mississippi Senate?"
+        }
+      ],
+      "remaining_cost_from_rounded_entries": 144016.2927,
+      "fair_marked_value": 15400.810400000006,
+      "unrealized_holding_pnl_vs_fair": -128615.4823,
+      "warning": "Snapshot mark-to-cost of remaining holdings only; not total strategy P&L, not day-change attribution, not settlement. Entries rounded4dp; source fair is contemporaneous snapshot."
+    },
+    "MN01_R_yes_D_no": {
+      "holdings": [
+        {
+          "exchange": "1024",
+          "signed_yes_quantity": 27310.0,
+          "side": "YES",
+          "quantity": 27310.0,
+          "yes_entry": 0.6472,
+          "fair": 0.06,
+          "sources": 2,
+          "estimated_remaining_cost_from_rounded_entry": 17675.032,
+          "marked_held_value_if_priced": 1638.6,
+          "remaining_holding_unrealized_vs_fair_if_priced": -16036.431999999999,
+          "title": "Will the Republican Party win the MN-01 House race?"
+        },
+        {
+          "exchange": "1023",
+          "signed_yes_quantity": -16165.0,
+          "side": "NO",
+          "quantity": 16165.0,
+          "yes_entry": 0.4278,
+          "fair": 0.935,
+          "sources": 2,
+          "estimated_remaining_cost_from_rounded_entry": 9249.613000000001,
+          "marked_held_value_if_priced": 1050.7249999999992,
+          "remaining_holding_unrealized_vs_fair_if_priced": -8198.888000000003,
+          "title": "Will the Democratic Party win the MN-01 House race?"
+        }
+      ],
+      "remaining_cost_from_rounded_entries": 26924.645,
+      "fair_marked_value": 2689.324999999999,
+      "unrealized_holding_pnl_vs_fair": -24235.32,
+      "warning": "Snapshot mark-to-cost of remaining holdings only; not total strategy P&L, not day-change attribution, not settlement. Entries rounded4dp; source fair is contemporaneous snapshot."
+    }
+  },
+  "final_inventory": {
+    "balance": 0.39,
+    "cost_basis": 951369.9,
+    "gross_contracts": 1267456.0,
+    "unpriced_positions": 36,
+    "held_positions": 36
+  },
+  "fill_direction_coverage": {
+    "raw_fill_order_ids": 17220,
+    "ids_with_authoritative_api_action_side": 15357,
+    "api_order_id_coverage_fraction": 0.8918118466898954,
+    "raw_fill_notifications_covered_by_api_side": 30931,
+    "raw_fill_notifications": 35483,
+    "unresolved_order_ids": 1863
+  },
+  "mn01_gross_matched_basis": {
+    "quantity_sold": 50000,
+    "purchase_price": 0.645,
+    "basis": 32250,
+    "gross_proceeds": 6310.475,
+    "gross_pnl": -25939.525,
+    "scope": "Two automated exits after manual reversal; before unshown charges; not whole-account realized P&L."
+  }
+}
