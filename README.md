@@ -11,11 +11,13 @@ I ran a Rust trading bot in the SIG Predictions Cup from October 1 to November 4
 
 These are virtual competition funds. Positions are still awaiting settlement, so the final value and ranking can change.
 
-## How it traded
+## The core strategy: stink bids
 
-The bot compared SIG contracts with the same outcomes on **Kalshi and Polymarket US**. It took prices that looked cheap or expensive against those references and left orders deeper in the book to catch large trades. After a fill, it tried to close the position when the price gap narrowed.
+The main strategy was **stink bidding**: leave buy orders well below the reference price and sell orders well above it. Large aggressive orders sometimes swept through several price levels and filled ours. The bot then tried to close the position when the price bounced back, freeing cash for the next sweep.
 
-That worked best when the move was temporary. Some positions stayed open much longer than expected, tying up cash that could have funded other trades.
+Early layers sat **6–20 cents from fair value**, estimated from matching contracts on **Kalshi and Polymarket US**, with additional walls at 5 and 95 cents. Orders could step one tick ahead of a large competing wall. Later versions used **3/4/5-cent ladders around SIG’s own price** to catch smaller moves that might reverse quickly.
+
+The hard part was getting out. A good entry against an outside price did not guarantee a bounce on SIG. Some sweep fills tied up cash for days. Separately, I kept selected positions for settlement, including a large Rhode Island holding.
 
 The engine used **Rust and Tokio**, with WebSocket updates and REST reads to recover missed fills and check account state. Python handled research and monitoring. Manual trades also changed the account, which became important later.
 

@@ -19,6 +19,8 @@ The frozen journal's complete-line SHA-256 is `bedd35137a8bcc820a98ae843a41274c4
 
 Private evidence includes raw order responses, source snapshots and manifests. It is deliberately outside this bundle. The public datasets include selected account observations and calculated metrics, without infrastructure addresses, credentials, raw configuration, or counterparties' account records. The bundle is a retrospective and supporting data, not a runnable trading system.
 
+The strategy description was checked against the October 3 strategy brief, archived configuration, deployment logs, source code, and runtime sweep events. Quoted ladder settings describe specific versions, not one configuration used throughout the month. The October 5 incident review supersedes the earlier thin-book diagnosis. Neither reference-price edge nor overlapping strategy-event counts are treated as realized strategy profit.
+
 ## Leaderboard accounting
 
 For this tournament, the account series is reconstructed as:

@@ -17,13 +17,17 @@ The venue reported 27,044,840.85 of volume and 18,027 orders with at least one f
 
 </details>
 
-## Pricing and orders
+## Stink bids and sweep ladders
 
-The bot compared SIG prices with matching outcomes on Kalshi and Polymarket US. It could take a sufficiently cheap offer or leave passive orders deeper in the book. Those resting orders were intended to catch large trades that pushed SIG away from the outside price, then exit as the gap narrowed.
+The main strategy was **stink bidding**: leave buy orders well below the reference price and sell orders well above it, waiting for aggressive trades to sweep through the book. By October 3, the walls sat 6/10/12/14/20¢ from fair value estimated from matching Kalshi and Polymarket US contracts, with additional walls at 5¢ and 95¢. Within each zone, orders could sit one tick ahead of a large competing wall.
+
+Later ladders used SIG's own price to target temporary local moves. By October 7, their offsets were 3/4/5¢. The exit engine recorded the price before a sweep and used staged exits to recycle inventory, freeing cash for the next wave. Selected directional positions were held for settlement; those holdings were separate from the sweep lots intended to trade back out.
 
 A registry mapped contracts and inverted outcomes where necessary. This was easy to get wrong. Some governor contracts had been linked to lieutenant-governor references; those mappings had to be removed. Similar names did not establish that two contracts would settle the same way.
 
-The reference calculation rejected stale, invalid, and excessively wide quotes, checked disagreement between sources, and retained a conservative bid/ask band. An outside midpoint was still only a reference. It did not establish that the same quantity could be hedged elsewhere. An early California governor position illustrated the problem: a thin reference book made an ordinary SIG price look unusually attractive, and the resulting inventory did not recycle as expected.
+The reference calculation rejected stale, invalid, and excessively wide quotes, checked disagreement between sources, and retained a conservative bid/ask band. An outside midpoint was still only a reference. It did not establish that the same quantity could be hedged elsewhere.
+
+A contemporaneous October 5 review corrected an early diagnosis of the California governor incident: the reference was right and the sweep was real. It simply did not reverse. Together with a Delaware Senate sweep, the expensive NO collateral tied up about 211,000 of cash. Resting orders stayed oversized as cash fell, and the engine's kill switch failed to cancel the base sweep orders.
 
 ```mermaid
 flowchart LR

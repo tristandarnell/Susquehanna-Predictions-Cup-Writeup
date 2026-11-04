@@ -46,13 +46,13 @@
 </section>
 
 <section class="section" id="system">
-  <div class="section-head"><div><div class="eyebrow">02 / Implementation</div><h2>The bot</h2></div><p>Rust/Tokio handled quotes, orders and inventory. I also traded manually, so the bot had to track changes outside its own order flow.</p></div>
+  <div class="section-head"><div><div class="eyebrow">02 / Strategy</div><h2>Stink bids and sweeps</h2></div><p>The main strategy was to leave orders far from the reference price, catch large trades sweeping through the book, and try to exit on the bounce. Selected holdings were kept for settlement.</p></div>
   <div class="build-grid">
+    <article class="build-card"><div class="index">STRATEGY</div><h3>Catch the sweep</h3><p>Early orders sat 6–20 cents from external fair value, sometimes one tick ahead of competing walls. Later ladders sat 3/4/5 cents from SIG’s own price. Exits aimed to recycle cash after a bounce; when it never came, inventory stayed open.</p><div class="stack"><span>STINK BIDS</span><span>SWEEP EXITS</span></div></article>
     <article class="build-card"><div class="index">PRICES</div><h3>Match the contracts</h3><p>The bot filtered stale and wide quotes before comparing prices. The contracts also had to mean the same thing: we caught governor markets incorrectly mapped to lieutenant-governor markets.</p><div class="stack"><span>KALSHI</span><span>POLYMARKET US</span></div></article>
     <article class="build-card"><div class="index">ORDERS</div><h3>Keep the account in sync</h3><p>WebSockets supplied updates; REST reads caught missed fills. Pending orders needed cash reservations, and retries had to avoid placing the same trade twice.</p><div class="stack"><span>RUST / TOKIO</span><span>WEBSOCKETS / REST</span></div></article>
-    <article class="build-card"><div class="index">STRATEGY</div><h3>Buy the gap, then exit</h3><p>The bot took cheap offers and left passive orders deeper in the book. The plan was to exit when the gap narrowed. Sometimes it stayed open for days.</p><div class="stack"><span>PASSIVE ORDERS</span><span>INVENTORY EXITS</span></div></article>
   </div>
-  <div class="pipeline" aria-label="Trading system flow"><div><small>SOURCES</small><b>Kalshi<br>Polymarket US</b></div><div><small>CHECKS</small><b>Contract match<br>Quote freshness</b></div><div><small>STRATEGY</small><b>Prices<br>Inventory</b></div><div><small>ORDERS</small><b>Cash checks<br>SIG API</b></div><div><small>UPDATES</small><b>Fills<br>Positions</b></div></div>
+  <div class="pipeline" aria-label="Trading system flow"><div><small>SOURCES</small><b>Kalshi<br>Polymarket US</b></div><div><small>CHECKS</small><b>Contract match<br>Quote freshness</b></div><div><small>STRATEGY</small><b>Sweep entries<br>Inventory exits</b></div><div><small>ORDERS</small><b>Cash checks<br>SIG API</b></div><div><small>UPDATES</small><b>Fills<br>Positions</b></div></div>
 </section>
 
 <section class="section" id="research">
