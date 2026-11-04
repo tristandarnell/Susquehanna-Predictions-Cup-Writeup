@@ -69,7 +69,7 @@ The larger decline came after trading stopped. At the final filled-order-count u
   <img src="figures/02-election-night.png" alt="Account value falling after the final recorded trades on election night">
 </picture>
 
-Cash was down to **0.39**. Some apparently separate positions were also the same bet: Democratic YES and Republican NO both depended on a Democratic win. The next version needs limits across each race, plus an exit reset whenever a manual trade reverses a position.
+Cash was down to **0.39**. Some apparently separate positions were also the same bet: Democratic YES and Republican NO both depended on a Democratic win.
 
 ## Code and data
 

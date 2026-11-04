@@ -120,11 +120,9 @@ The final pre-close snapshot showed the following remaining holdings. Acquisitio
 
 These figures exclude exited lots and earlier profits. They show the remaining exposure, not total race P&L or an exact breakdown of the differently marked leaderboard decline. CO-03 and Mississippi alone had about 294,556 of acquisition basis against 30,828 of reference value.
 
-## Valuation and the next version
+## Closing valuation
 
 The bot reported about 265,930 in `value_at_fair` just before close, but the calculation omitted **17 of 36 holdings** because their references were missing. Those positions included Rhode Island and represented about 444,517 of remaining basis. After close, all references disappeared and the field became zero. Neither figure was a complete portfolio value.
-
-The next version needs to carry that coverage information with every valuation. It also needs to clear dependent exit rules after a reversal, aggregate contracts by race outcome, and reserve cash for exits as well as entries. These changes address specific problems seen during the competition.
 
 Claude and Codex helped with code, research, debugging, and analysis. I set allocations and limits, approved deployments, and placed manual trades.
 
