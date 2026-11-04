@@ -83,5 +83,3 @@ The account recorded **27.04 million in volume across 18,027 orders with fills**
 The recorder missed the first 11.45 hours, so the initial 100,000 is shown separately.
 
 </details>
-
-*Write-up format inspired by [IHateVolatility's SIG Prediction Cup report](https://github.com/IHateVolatility/SIG-Prediction-Cup).*
