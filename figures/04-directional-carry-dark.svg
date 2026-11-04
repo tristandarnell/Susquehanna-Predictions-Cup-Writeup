@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1100" height="690" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1100 690" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1100" height="690"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-690)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1100" height="690" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #0c1827; fill-rule: evenodd;"/>
+			<text x="60" y="640" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 25px;fill: #f0f6fb; stroke:none;" transform="translate(0,1280) scale(1,-1)">Closing exposure across three key races</text>
+			<text x="60" y="612" style="font-family: Arial, sans-serif; font-size: 12px;fill: #a9b9ca; stroke:none;" transform="translate(0,1224) scale(1,-1)">Remaining positions at 11:56 am EST, November 4 | Selected races with available outside references</text>
+			<path d="M 60,594 L 1040,594 Z" style="stroke: #2b4056; stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 360,140 L 360,510 Z" style="stroke: #2b4056; stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="354.192" y="117" style="font-family: Arial, sans-serif; font-size: 11px;fill: #a9b9ca; stroke:none;" transform="translate(0,234) scale(1,-1)">0k</text>
+			<path d="M 548.235294,140 L 548.235294,510 Z" style="stroke: #2b4056; stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="539.3692941176471" y="117" style="font-family: Arial, sans-serif; font-size: 11px;fill: #a9b9ca; stroke:none;" transform="translate(0,234) scale(1,-1)">50k</text>
+			<path d="M 736.470588,140 L 736.470588,510 Z" style="stroke: #2b4056; stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="724.5465882352942" y="117" style="font-family: Arial, sans-serif; font-size: 11px;fill: #a9b9ca; stroke:none;" transform="translate(0,234) scale(1,-1)">100k</text>
+			<path d="M 924.705882,140 L 924.705882,510 Z" style="stroke: #2b4056; stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="912.7818823529412" y="117" style="font-family: Arial, sans-serif; font-size: 11px;fill: #a9b9ca; stroke:none;" transform="translate(0,234) scale(1,-1)">150k</text>
+			<text x="100" y="552" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #a3baff; stroke:none;" transform="translate(0,1104) scale(1,-1)">Remaining entry basis (rounded-entry estimate)</text>
+			<rect x="72" y="550" width="16" height="9" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #a3baff; fill-rule: evenodd;"/>
+			<text x="550" y="552" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #ff988e; stroke:none;" transform="translate(0,1104) scale(1,-1)">Outside-reference marked value</text>
+			<rect x="522" y="550" width="16" height="9" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #ff988e; fill-rule: evenodd;"/>
+			<text x="72" y="469" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 16px;fill: #f0f6fb; stroke:none;" transform="translate(0,938) scale(1,-1)">Colorado 3rd District</text>
+			<text x="72" y="447" style="font-family: Arial, sans-serif; font-size: 10.7px;fill: #a9b9ca; stroke:none;" transform="translate(0,894) scale(1,-1)">Democratic YES + Republican NO</text>
+			<rect x="360" y="464" width="566.7378763294118" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #a3baff; fill-rule: evenodd;"/>
+			<rect x="360" y="435" width="58.078256941176505" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #ff988e; fill-rule: evenodd;"/>
+			<text x="936.7378763294118" y="469" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #a3baff; stroke:none;" transform="translate(0,938) scale(1,-1)">150,540</text>
+			<text x="428.0782569411765" y="440" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #ff988e; stroke:none;" transform="translate(0,880) scale(1,-1)">15,427</text>
+			<text x="72" y="344" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 16px;fill: #f0f6fb; stroke:none;" transform="translate(0,688) scale(1,-1)">Mississippi Senate</text>
+			<text x="72" y="322" style="font-family: Arial, sans-serif; font-size: 10.7px;fill: #a9b9ca; stroke:none;" transform="translate(0,644) scale(1,-1)">Republican YES + Democratic NO</text>
+			<rect x="360" y="339" width="542.1789842823529" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #a3baff; fill-rule: evenodd;"/>
+			<rect x="360" y="310" width="57.97952150588236" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #ff988e; fill-rule: evenodd;"/>
+			<text x="912.1789842823529" y="344" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #a3baff; stroke:none;" transform="translate(0,688) scale(1,-1)">144,016</text>
+			<text x="427.97952150588236" y="315" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #ff988e; stroke:none;" transform="translate(0,630) scale(1,-1)">15,401</text>
+			<text x="72" y="219" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 16px;fill: #f0f6fb; stroke:none;" transform="translate(0,438) scale(1,-1)">Minnesota 1st District</text>
+			<text x="72" y="197" style="font-family: Arial, sans-serif; font-size: 10.7px;fill: #a9b9ca; stroke:none;" transform="translate(0,394) scale(1,-1)">Republican YES + Democratic NO</text>
+			<rect x="360" y="214" width="101.36336941176472" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #a3baff; fill-rule: evenodd;"/>
+			<rect x="360" y="185" width="10.124517647058838" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: #ff988e; fill-rule: evenodd;"/>
+			<text x="471.3633694117647" y="219" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #a3baff; stroke:none;" transform="translate(0,438) scale(1,-1)">26,925</text>
+			<text x="380.12451764705884" y="190" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 11px;fill: #ff988e; stroke:none;" transform="translate(0,380) scale(1,-1)">2,689</text>
+			<text x="60" y="49" style="font-family: Arial, sans-serif; font-size: 10.3px;fill: #a9b9ca; stroke:none;" transform="translate(0,98) scale(1,-1)">Both sides within each race express the same directional view. Differences are unrealized mark-to-cost for remaining holdings only.</text>
+			<text x="60" y="33" style="font-family: Arial, sans-serif; font-size: 10.3px;fill: #a9b9ca; stroke:none;" transform="translate(0,66) scale(1,-1)">This is a selected subset, not total portfolio value: 17 of 36 holdings lacked a reference mark. No exact leaderboard P&amp;L attribution is implied.</text>
+		</g>
+	</g>
+</svg>

@@ -105,7 +105,8 @@ Historical market-making numbers come from recorded October replay and forward-s
 
 ## Files in this bundle
 
-- `README.md`: the original retrospective.
+- `README.md`: the concise GitHub retrospective.
+- `docs/technical-retrospective.md`: the full operating history and analysis.
 - `report.html`: a recruiter-oriented visual case study with an interactive account timeline.
 - `figures/`: four charts in PNG and SVG formats, plus an animated account replay.
 - `data/metrics.json`: selected metrics with measurement definitions.

@@ -20,4 +20,4 @@ Choose the bullets that best match the role and your own contribution; retain th
 
 **For a project walkthrough:** start with the strategy and architecture, show the full observed account curve, explain one rejected research idea, then walk through the MN-01 incident and its proposed state-transition fix. Describe Claude and Codex's development assistance alongside the human decisions and verification work.
 
-The [full retrospective](../README.md) and [methods](methods.md) contain the supporting definitions and evidence limitations.
+The [full retrospective](technical-retrospective.md) and [methods](methods.md) contain the supporting definitions and evidence limitations.
