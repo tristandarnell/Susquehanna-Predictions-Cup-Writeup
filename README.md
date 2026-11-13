@@ -1,4 +1,4 @@
-# Building a trading bot for the SIG Predictions Cup
+# Building a trading bot for the Susquehanna Predictions Cup
 
 [Interactive report](https://tristandarnell.github.io/SIG-Predictions-Cup-Writeup/) · [Technical notes](docs/technical-retrospective.md) · [Data and methods](docs/methods.md)
 
@@ -7,7 +7,7 @@
   <img src="figures/01-equity-and-rank.png" alt="Account value and leaderboard rank during the competition">
 </picture>
 
-I ran a Rust trading bot in the SIG Predictions Cup from October 1 to November 4, 2026. The account started with **100,000 SUSQies** and ended trading in **sixth place**, with **762,110 in marked account value (+662.1%)**. It peaked at 1.055 million and reached second place during the month.
+I ran a Rust trading bot in the Susquehanna Predictions Cup from October 1 to November 4, 2026. The account started with **100,000 SUSQies** and ended trading in **sixth place**, with **762,110 in marked account value (+662.1%)**. It peaked at 1.055 million and reached second place during the month.
 
 These are virtual competition funds. Positions are still awaiting settlement, so the final value and ranking can change.
 
@@ -15,9 +15,9 @@ These are virtual competition funds. Positions are still awaiting settlement, so
 
 The main strategy was **stink bidding**: leave buy orders well below the reference price and sell orders well above it. Large aggressive orders sometimes swept through several price levels and filled ours. The bot then tried to close the position when the price bounced back, freeing cash for the next sweep.
 
-Early layers sat **6–20 cents from fair value**, estimated from matching contracts on **Kalshi and Polymarket US**, with additional walls at 5 and 95 cents. Orders could step one tick ahead of a large competing wall. Later versions used **3/4/5-cent ladders around SIG’s own price** to catch smaller moves that might reverse quickly.
+Early layers sat **6–20 cents from fair value**, estimated from matching contracts on **Kalshi and Polymarket US**, with additional walls at 5 and 95 cents. Orders could step one tick ahead of a large competing wall. Later versions used **3/4/5-cent ladders around Susquehanna’s own price** to catch smaller moves that might reverse quickly.
 
-The hard part was getting out. A good entry against an outside price did not guarantee a bounce on SIG. Some sweep fills tied up cash for days. Separately, I kept selected positions for settlement, including a large Rhode Island holding.
+The hard part was getting out. A good entry against an outside price did not guarantee a bounce on Susquehanna. Some sweep fills tied up cash for days. Separately, I kept selected positions for settlement, including a large Rhode Island holding.
 
 The engine used **Rust and Tokio**, with WebSocket updates and REST reads to recover missed fills and check account state. Python handled research and monitoring. Manual trades also changed the account, which became important later.
 
