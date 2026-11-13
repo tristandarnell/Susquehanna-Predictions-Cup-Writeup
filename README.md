@@ -1,6 +1,6 @@
 # Building a trading bot for the Susquehanna Predictions Cup
 
-[Interactive report](https://tristandarnell.github.io/SIG-Predictions-Cup-Writeup/) · [Technical notes](docs/technical-retrospective.md) · [Data and methods](docs/methods.md)
+[Interactive report](https://tristandarnell.github.io/Susquehanna-Predictions-Cup-Writeup/) · [Technical notes](docs/technical-retrospective.md) · [Data and methods](docs/methods.md)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/01-equity-and-rank-dark.png">
@@ -25,7 +25,7 @@ The engine used **Rust and Tokio**, with WebSocket updates and REST reads to rec
 flowchart LR
     F[Kalshi + Polymarket US] --> V[Contract and quote checks]
     V --> E[Rust trading engine]
-    E --> X[SIG exchange]
+    E --> X[Susquehanna exchange]
     X --> R[Orders, fills and positions]
     R --> E
     R --> J[Logs and Python research]

@@ -1,8 +1,8 @@
-# SIG Predictions Cup: technical notes
+# Susquehanna Predictions Cup: technical notes
 
-[Overview](../README.md) · [Interactive report](https://tristandarnell.github.io/SIG-Predictions-Cup-Writeup/) · [Methods](methods.md)
+[Overview](../README.md) · [Interactive report](https://tristandarnell.github.io/Susquehanna-Predictions-Cup-Writeup/) · [Methods](methods.md)
 
-I ran a Rust trading bot in the SIG Predictions Cup from October 1 to November 4, 2026. The account started with 100,000 SUSQies and reached **762,109.67 in marked value**, a **+662.11% marked return**, on the first post-close leaderboard. It stood sixth. The highest recorded value was 1,054,548.74, and the best observed rank was second.
+I ran a Rust trading bot in the Susquehanna Predictions Cup from October 1 to November 4, 2026. The account started with 100,000 SUSQies and reached **762,109.67 in marked value**, a **+662.11% marked return**, on the first post-close leaderboard. It stood sixth. The highest recorded value was 1,054,548.74, and the best observed rank was second.
 
 These are pre-settlement results. Marked value includes open positions, so it is not realized cash profit. The account still held 36 positions when trading closed. Final standings follow [settlement](https://sig.thesuper.market/docs/settlement-and-payouts).
 
@@ -21,7 +21,7 @@ The venue reported 27,044,840.85 of volume and 18,027 orders with at least one f
 
 The main strategy was **stink bidding**: leave buy orders well below the reference price and sell orders well above it, waiting for aggressive trades to sweep through the book. By October 3, the walls sat 6/10/12/14/20¢ from fair value estimated from matching Kalshi and Polymarket US contracts, with additional walls at 5¢ and 95¢. Within each zone, orders could sit one tick ahead of a large competing wall.
 
-Later ladders used SIG's own price to target temporary local moves. By October 7, their offsets were 3/4/5¢. The exit engine recorded the price before a sweep and used staged exits to recycle inventory, freeing cash for the next wave. Selected directional positions were held for settlement; those holdings were separate from the sweep lots intended to trade back out.
+Later ladders used Susquehanna's own price to target temporary local moves. By October 7, their offsets were 3/4/5¢. The exit engine recorded the price before a sweep and used staged exits to recycle inventory, freeing cash for the next wave. Selected directional positions were held for settlement; those holdings were separate from the sweep lots intended to trade back out.
 
 A registry mapped contracts and inverted outcomes where necessary. This was easy to get wrong. Some governor contracts had been linked to lieutenant-governor references; those mappings had to be removed. Similar names did not establish that two contracts would settle the same way.
 
@@ -34,7 +34,7 @@ flowchart LR
     F[Kalshi + Polymarket US] --> V[Mappings and quote checks]
     V --> E[Rust strategy and inventory engine]
     E --> O[Cash and order checks]
-    O --> X[SIG exchange]
+    O --> X[Susquehanna exchange]
     X --> R[Fills and position reconciliation]
     R --> E
     R --> J[Journal and Python research]

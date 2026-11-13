@@ -1,6 +1,6 @@
 # Project summary
 
-I ran a Rust/Tokio trading bot in the SIG Predictions Cup. Its main strategy was stink bidding: leave orders far from the reference price, catch large trades sweeping through the book, and try to exit on the bounce. It used Kalshi and Polymarket US for reference prices, with Python tools for research and monitoring. Claude and Codex helped with development; I controlled allocations and also traded manually.
+I ran a Rust/Tokio trading bot in the Susquehanna Predictions Cup. Its main strategy was stink bidding: leave orders far from the reference price, catch large trades sweeping through the book, and try to exit on the bounce. It used Kalshi and Polymarket US for reference prices, with Python tools for research and monitoring. Claude and Codex helped with development; I controlled allocations and also traded manually.
 
 The account grew from 100,000 to **762,110 SUSQies in marked value (+662.1%)**, placing sixth at trading close. Results remain provisional until the open positions settle. Turnover was 27.04 million across 18,027 orders with fills.
 
